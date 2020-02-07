@@ -11,7 +11,9 @@ const organizeInstructors = (instructors) => {
       outputObject[instructors[val].course] = instructors[val].name
     }
   }
+
   return outputObject;
+  
 };
 
 
