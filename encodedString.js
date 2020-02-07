@@ -1,15 +1,15 @@
 const urlDecode = function(text) {
-  text = text.replace(/%20/g, ' ')
-  text = text.replace(/=/g, ': ')
-  text = text.split('&')
-  let outputObject = {} 
+  text = text.replace(/%20/g, ' ');
+  text = text.replace(/=/g, ': ');
+  text = text.split('&');
+  let outputObject = {};
 
   for (let i = 0; i < text.length; i++) {
     let split = text[i].split(':');
     outputObject[split[0].trim()] = split[1].trim();
   }
-  
-  return(outputObject)
+
+  return outputObject;
 
 };
 

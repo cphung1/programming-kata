@@ -1,14 +1,13 @@
 const organizeInstructors = (instructors) => {
   let outputObject = {};
+  
   for (const val in instructors) {
     outputObject[instructors[val].course] = [];
   }
 
   for (const val in instructors) {
-    if(instructors[val].course) {
-      outputObject[instructors[val].course].push(instructors[val].name)
-    } else {
-      outputObject[instructors[val].course] = instructors[val].name
+    if (instructors[val].course) {
+      outputObject[instructors[val].course].push(instructors[val].name);
     }
   }
 
